@@ -3,7 +3,7 @@ module github.com/cristhianforerod/udemy-go-course
 go 1.12
 
 require (
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-http-utils/logger v0.0.0-20161128092850-f3a42dcdeae6
 	github.com/gorilla/mux v1.7.4
 	github.com/rs/cors v1.7.0

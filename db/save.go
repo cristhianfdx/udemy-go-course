@@ -2,6 +2,7 @@ package db
 
 import (
 	"context"
+	"os"
 	"time"
 
 	"github.com/cristhianforerod/udemy-go-course/models"
@@ -12,7 +13,7 @@ func Save(user models.User) (string, bool, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 
-	db := MongoCN.Database("twitterclone")
+	db := MongoCN.Database(os.Getenv("DB_NAME"))
 	col := db.Collection("users")
 
 	user.Password, _ = PasswordEncrypt(user.Password)
