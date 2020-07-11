@@ -1,6 +1,6 @@
 module github.com/cristhianforerod/udemy-go-course
 
-go 1.14.4
+go 1.13
 
 require (
 
